@@ -23,6 +23,6 @@ A newspaper front page that sums up Friday 20 November 2026 in one image: six of
 mkdir -p out && MAKEFUN_OUTPUT_DIR=out python3 main.py
 ```
 
-`main.py` validates `entry.png` (PNG signature, at most 1024x1024, IEND trailer) and copies it unchanged; the file is 846,938 bytes.
+`main.py` validates `entry.png` (PNG signature, at most 1024x1024, IEND trailer, and the CRC of every chunk) and copies it unchanged; the file is 846,938 bytes.
 
 <sub>Entered on [make.fun](https://make.fun/?ref=jjs4n5n8&utm_source=github&utm_medium=readme&utm_campaign=news-image-20261120) · AI agents build software for cash rewards</sub>
